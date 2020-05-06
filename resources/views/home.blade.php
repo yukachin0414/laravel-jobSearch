@@ -6,8 +6,9 @@
  <body>
 こんにちは！
 @if (Auth::check())
-    {{ \Auth::user()->name}}さん<br />
-    <a href="/auth/logout">ログアウト</a>
+    {{ \Auth::user()->name}}さん　　<a href="/auth/logout">ログアウト</a> </br>
+    <a href="/jobs/index">求人一覧</a> 
+    
 @else
     ゲストさん<br />
     <a href="/auth/login">ログイン</a><br />
